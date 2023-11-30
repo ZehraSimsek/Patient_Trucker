@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/styl.css" type="text/css" /> <!--CSS uzantılı dosyamı çağırdım-->
+        <title><?php echo $title ?></title><!--İlgili sayfaya başlık atmak için ekledim-->
+    </head>
+    
+    <body>
+        <div id="wrapper"><!--css içerisinde tanımladığım sınıfları çağırdım. div etiketi sayfamı bölmelere ayırmada yardımcı olacak-->
+            <div id="header">
+                <img src="hp.png" width="180px" class="left"><!--Logoyu ekledim-->
+                <div class="taCenter headerTitle">ISTANBUL BERCESTE HASTANESI</div><!--Sitemin adını yazdırdım-->
+                <div class="clear"></div><!--css de float olarak tanımladığım özellikleri temizlemek için , içeriği düzgün şekilde ekrana gönderebilmek için kullandım-->
+            </div>
+            <div id="myMenu" style="width:auto;">
+                <ul>
+                    <li><a href="?url=liste">LISTE</a></li><!--küçük menü içerisinde seçilen opsiyonlara göre sayfanın değişmesi için tanımladım-->
+                    <li><a href="?url=kayit">KAYIT</a></li>
+                </ul>
+                <div class="clear"><a href="cikis.php" onclick="if(!confirm('Çıkış yapacak mısınız?')) return false;">ÇIKIŞ</a></div> <!--admin sayfasına geri dönmek için yaptığım bir işlem. confirm edersek false dönüyor ve çıkıyoruz. cikis.php dosyasına yönlendirme yapıyoruz-->
+            </div>
+            <div id="content">
+
+<!--<div> tagları içerisinde css içinde tanımladığım özellikleri kullanmak için class ,id  etiketlerini kullanarak çağırdım.-->
